@@ -1,10 +1,10 @@
 import React from "react";
 
-function Customer(){
+function Customer(props){
     return(
         <div>
-            <img/>
-            <h4></h4>
+            <img src={props.imgUrl}/>
+            <h4>{props.customer}</h4>
             <p>Verified Buyer</p>
         </div>
     );

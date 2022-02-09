@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data";
+import {testimonials, reviewers} from "../data";
 import Card from "./Card";
 import Rating from "./Rating";
 import Info from "./Info";
@@ -13,7 +13,19 @@ function App() {
 
       </section>
       <section>
-        <Card/>
+        {
+          testimonials.map((testimonial, index) => {
+            return (
+              <Card 
+                key = {index}
+                index = {index}
+                customerName = {testimonial.user} 
+                imgUrl = {testimonial.imgUrl}
+                review ={testimonial.comment}
+              />
+            );
+          })
+        }
       </section>
 
     </main>
