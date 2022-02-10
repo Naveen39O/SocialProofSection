@@ -1,10 +1,15 @@
 import React from "react";
 
-function Rating(){
+function Rating(props){
     return (
         <div>
-            <img src="" alt=""/>
-            <p></p>
+            {
+                [...Array(props.rating)].map((e, index) => 
+                {
+                    return (<img key = {index} src="./images/icon-star.svg" alt="rating"/>);
+                })
+            }
+            <p>Rated 5 Stars in {props.reviewer}</p>
         </div>
     )
 }

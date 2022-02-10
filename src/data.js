@@ -20,6 +20,19 @@ const testimonials =[
     }
 ];
 
-const reviewers = ["Reviews", "Report Guru", "BestTech"];
+const reviews = [
+    {
+        reviewer: "Reviews",
+        rating: 5
+    },
+    {
+        reviewer: "Report Guru",
+        rating: 5
+    },
+    {
+        reviewer: "BestTech",
+        rating: 5
+    }
+];
 
-export {testimonials, reviewers};
+export {testimonials, reviews};
