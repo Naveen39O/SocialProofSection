@@ -67,9 +67,12 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+learnt that multiple background images can be added and can be position using background-position property.
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+html{
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
 }
 ```
 ```js
