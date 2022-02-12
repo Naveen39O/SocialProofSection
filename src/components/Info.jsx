@@ -2,7 +2,7 @@ import React from "react";
 
 function Info(){
     return (
-        <div>
+        <div className="info">
             <h1>10,000+ of our users love our products.</h1>
             <p>
                 We only provide great products combined with excellent customer service.

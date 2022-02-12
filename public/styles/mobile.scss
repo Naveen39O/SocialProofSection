@@ -1,5 +1,82 @@
+@import "colors";
+
+@mixin bordered($color, $radius) {
+  border: {
+    radius: $radius;
+  }
+}
+
 html{
   background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right bottom;
+}
+
+body{
+  font-size: 14px;
+  font-family: 'Spartan', sans-serif;
+}
+
+main{
+  margin: 20% 5%;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  color: $dark-magenta;
+}
+
+.info{
+  text-align: center;
+}
+
+.rating-div{
+  align-items: center;
+  background-color: $light-grayish-magenta;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 10px 10px 1px;
+  text-align: center;
+  @include bordered(inherit, 10px)
+}
+
+.rating-p{
+  color: $dark-magenta;
+  font-weight: bold;
+}
+
+.star-div{
+  display: flex;
+  padding: 0 90px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+// .star-div > div{
+//   padding: 0 10px 0 10px;
+// }
+
+.star-img{
+  padding: 0 10px;
+}
+
+.card{
+  background-color: $dark-magenta;
+  @include bordered(none, 10px)
+}
+
+// .customer{
+
+// }
+
+.cust-img{
+  border-radius: 50%;
+  float: left;
+}
+
+.cust-review{
+  clear: left;
 }

@@ -3,9 +3,9 @@ import Customer from "./Customer";
 
 function Card(props){
     return (
-        <div>
+        <div className="card">
             <Customer key={props.index} customer={props.customerName} imgUrl ={props.imgUrl}/>
-            <p>{props.review}</p>
+            <p className="cust-review">{props.review}</p>
         </div>
     );
 }
