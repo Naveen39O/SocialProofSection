@@ -14,6 +14,7 @@ function App() {
             return(
               <Rating 
                 key ={indx}
+                index ={indx}
                 reviewer = {review.reviewer}
                 rating = {review.rating}
               />

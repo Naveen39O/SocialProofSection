@@ -4,8 +4,10 @@ function Customer(props){
     return(
         <div className="customer">
             <img className="cust-img" src={props.imgUrl}/>
-            <h4>{props.customer}</h4>
-            <p>Verified Buyer</p>
+            <p className="customer__details">
+                {props.customer}<br/>
+                Verified Buyer
+            </p>
         </div>
     );
 }
