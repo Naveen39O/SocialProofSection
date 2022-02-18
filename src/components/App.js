@@ -23,7 +23,7 @@ function App() {
         }
 
       </section>
-      <section>
+      <section className="card-section">
         {
           testimonials.map((testimonial, index) => {
             return (

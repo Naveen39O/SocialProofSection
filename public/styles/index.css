@@ -16,14 +16,23 @@ main {
 }
 
 h1 {
-  font-size: 2.5em;
-  font-weight: bold;
+  font-size: 2.2em;
   text-align: center;
   color: #502050;
+  line-height: 1em;
+  padding: 10px 20px 0;
 }
 
 .info {
   text-align: center;
+}
+
+.info-para {
+  color: #937b92;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.7em;
+  margin-bottom: 40px;
 }
 
 .rating-div {
@@ -53,26 +62,43 @@ h1 {
   padding: 0 4px 0 4px;
 }
 
+.card-section {
+  margin: 50px 0;
+}
+
 .card {
   background-color: #502050;
-  padding: 20px;
-  margin: 15px 0;
+  padding: 35px 25px 15px;
+  margin: 20px 0;
   border-radius: 10px;
 }
 
 .cust-img {
-  border-radius: 50%;
+  border-radius: 20px;
   float: left;
   width: 15%;
   height: 15%;
+  margin-right: 20px;
 }
 
-.customer__details {
-  padding: 10px 0 0 10px;
+.customer__name {
+  color: #f7f2f7;
+  font-weight: 700;
+  margin: 7px 0;
 }
 
 .cust-review {
   clear: left;
+  color: #f7f2f7;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.8em;
+  margin-top: 26px;
+}
+
+.customer__authentic {
+  color: #ee68a4;
+  margin: 7px 0;
 }
 
 /*# sourceMappingURL=index.css.map */
