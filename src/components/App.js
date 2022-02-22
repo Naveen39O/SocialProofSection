@@ -7,20 +7,22 @@ import Info from "./Info";
 function App() {
   return (
     <main className="App">
-      <section>
+      <section className="top-section">
         <Info/>
-        {
-          reviews.map((review, indx) => {
-            return(
-              <Rating 
-                key ={indx}
-                index ={indx}
-                reviewer = {review.reviewer}
-                rating = {review.rating}
-              />
-            );
-          })
-        }
+        <div className="rating-container">
+          {
+            reviews.map((review, indx) => {
+              return(
+                <Rating 
+                  key ={indx}
+                  index ={indx}
+                  reviewer = {review.reviewer}
+                  rating = {review.rating}
+                />
+              );
+            })
+          }
+        </div>
 
       </section>
       <section className="card-section">

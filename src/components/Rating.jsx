@@ -3,7 +3,7 @@ import React from "react";
 function Rating(props){
     return (
         <div className="rating-div">
-            <div className="star-container" >
+            <div className={"star-container " +  props.reviewer} >
             {
                 [...Array(props.rating)].map((e, index) => 
                 {

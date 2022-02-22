@@ -17,7 +17,6 @@ main {
 
 h1 {
   font-size: 2.2em;
-  text-align: center;
   color: #502050;
   line-height: 1em;
   padding: 10px 20px 0;
@@ -99,6 +98,53 @@ h1 {
 .customer__authentic {
   color: #ee68a4;
   margin: 7px 0;
+}
+
+@media (min-width: 375px) {
+  main {
+    margin: 10% 15%;
+  }
+
+  .top-section {
+    display: flex;
+  }
+
+  .info {
+    box-sizing: border-box;
+    max-width: 50%;
+    padding-right: 8%;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3.2em;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .rating-container {
+    max-width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .rating-div {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    margin: 10px 0;
+  }
+
+  .star-container {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .rating-p {
+    padding-right: 40px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
