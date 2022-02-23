@@ -1,8 +1,14 @@
 @import "colors";
 
 @media (min-width:375px){
+  html{
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+  }
+
   main{
-    margin: 10% 15%;
+    margin: 8% 12%;
   }
 
   .top-section{
@@ -11,8 +17,8 @@
 
   .info{
     box-sizing: border-box;
-    max-width: 50%;
-    padding-right: 8%;
+    width: 50%;
+    padding-right: 12%;
     text-align: left;
   }
 
@@ -23,7 +29,7 @@
   }
 
   .rating-container{
-    max-width: 50%;
+    width: 50%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -42,12 +48,41 @@
     padding: 0 20px;
   }
 
-  // .Reviews{
+  .Reviews{
+    align-self: flex-start;
+  }
 
-  // }
+  .Report{
+    align-self: center;
+  }
+
+  .BestTech{
+    align-self: flex-end;
+  }
 
   .rating-p{
-    padding-right: 40px;
+    padding-right: 60px;
+  }
+
+  .card-section{
+    display: flex;
+    height: 300px;
+  }
+
+  .card{
+    margin-right: 30px;
+  }
+
+  .card1{
+    align-self: flex-start;
+  }
+
+  .card2{
+    align-self: center;
+  }
+
+  .card3{
+    align-self: flex-end;
   }
 
 }
