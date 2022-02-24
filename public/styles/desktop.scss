@@ -1,6 +1,6 @@
 @import "colors";
 
-@media (min-width:375px){
+@media (min-width:500px){
   html{
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat, no-repeat;
@@ -18,8 +18,12 @@
   .info{
     box-sizing: border-box;
     width: 50%;
-    padding-right: 12%;
+    padding-right: 10%;
     text-align: left;
+  }
+
+  .info-para{
+    margin-bottom: 14px;
   }
 
   h1{
@@ -34,10 +38,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 0 30px;
   }
 
   .rating-div{
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 8px;
     margin: 10px 0;
@@ -66,11 +71,13 @@
 
   .card-section{
     display: flex;
-    height: 300px;
+    height: 60vh;
+    margin: 30px 0;
   }
 
   .card{
     margin-right: 30px;
+    padding: 35px 32px 15px;
   }
 
   .card1{
@@ -81,8 +88,59 @@
     align-self: center;
   }
 
-  .card3{
+  .card3{ 
     align-self: flex-end;
   }
 
+  .cust-img{
+    border-radius: 25px;
+  }
+
+  .customer__name{
+    margin: 0;
+    padding: 3px 0;
+  }
+
+  .customer__authentic{
+    margin: 0;
+    padding: 3px 0;
+  }
+
+  @media (max-height:300px){
+    .card-section{
+      height: 200vh;
+    }
+  }
+
+  @media (max-height:700px){
+    .card-section{
+      height: 150vh;
+    }
+  }
+}
+
+
+
+@media (min-width: 1100px){
+  .rating-div{
+    flex-direction: row;
+  }
+
+  @media (max-height:500px){
+    .card-section{
+      height: 80vh;
+    }
+  }
+
+  @media (max-height:800px){
+    .card-section{
+      height: 50vh;
+    }
+  }
+
+  @media (max-height:1000px){
+    .card-section{
+      height: 300px;
+    }
+  }
 }
