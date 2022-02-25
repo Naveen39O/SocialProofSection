@@ -1,0 +1,146 @@
+@import "colors";
+
+@media (min-width:500px){
+  html{
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+  }
+
+  main{
+    margin: 8% 12%;
+  }
+
+  .top-section{
+    display: flex;
+  }
+
+  .info{
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 10%;
+    text-align: left;
+  }
+
+  .info-para{
+    margin-bottom: 14px;
+  }
+
+  h1{
+    font-size: 3.2em;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .rating-container{
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 30px;
+  }
+
+  .rating-div{
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    margin: 10px 0;
+  }
+
+  .star-container{
+    display: block;
+    padding: 0 20px;
+  }
+
+  .Reviews{
+    align-self: flex-start;
+  }
+
+  .Report{
+    align-self: center;
+  }
+
+  .BestTech{
+    align-self: flex-end;
+  }
+
+  .rating-p{
+    padding-right: 60px;
+  }
+
+  .card-section{
+    display: flex;
+    height: 60vh;
+    margin: 30px 0;
+  }
+
+  .card{
+    margin-right: 30px;
+    padding: 35px 32px 15px;
+  }
+
+  .card1{
+    align-self: flex-start;
+  }
+
+  .card2{
+    align-self: center;
+  }
+
+  .card3{ 
+    align-self: flex-end;
+  }
+
+  .cust-img{
+    border-radius: 25px;
+  }
+
+  .customer__name{
+    margin: 0;
+    padding: 3px 0;
+  }
+
+  .customer__authentic{
+    margin: 0;
+    padding: 3px 0;
+  }
+
+  @media (max-height:300px){
+    .card-section{
+      height: 200vh;
+    }
+  }
+
+  @media (max-height:700px){
+    .card-section{
+      height: 150vh;
+    }
+  }
+}
+
+
+
+@media (min-width: 1100px){
+  .rating-div{
+    flex-direction: row;
+  }
+
+  @media (max-height:500px){
+    .card-section{
+      height: 80vh;
+    }
+  }
+
+  @media (max-height:800px){
+    .card-section{
+      height: 50vh;
+    }
+  }
+
+  @media (max-height:1000px){
+    .card-section{
+      height: 300px;
+    }
+  }
+}
